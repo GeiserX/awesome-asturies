@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
+  <defs>
+    <clipPath id="r"><rect width="800" height="200" rx="16"/></clipPath>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0f"/><stop offset="100%" stop-color="#14141f"/>
+    </linearGradient>
+    <filter id="b1"><feGaussianBlur stdDeviation="40"/></filter>
+  </defs>
+  <g clip-path="url(#r)">
+    <rect width="800" height="200" fill="url(#bg)"/>
+    <ellipse cx="150" cy="180" rx="200" ry="120" fill="#0066CC" opacity="0.15" filter="url(#b1)"/>
+    <ellipse cx="650" cy="20" rx="200" ry="120" fill="#FFFFFF" opacity="0.08" filter="url(#b1)"/>
+    <rect width="800" height="2" fill="#0066CC" opacity="0.6"/>
+    <text x="400" y="75" text-anchor="middle" font-family="system-ui,sans-serif" font-size="36" fill="#fff" font-weight="700" letter-spacing="1">awesome-asturies</text>
+    <rect x="280" y="86" width="240" height="2" rx="1" fill="#0066CC" opacity="0.5"/>
+    <text x="400" y="116" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" fill="rgba(255,255,255,0.5)" font-weight="300" letter-spacing="3">SOFTWARE OPEN SOURCE PAL PRINCIPAU D'ASTURIES</text>
+    <!-- Cruz de la Victoria stylized -->
+    <g fill="#0066CC" opacity="0.4" transform="translate(400,158)">
+      <rect x="-30" y="-3" width="60" height="6" rx="1"/>
+      <rect x="-3" y="-30" width="6" height="60" rx="1"/>
+      <circle cx="-30" cy="0" r="4"/><circle cx="30" cy="0" r="4"/>
+      <circle cx="0" cy="-30" r="4"/><circle cx="0" cy="30" r="4"/>
+      <text x="0" y="3" text-anchor="middle" font-family="system-ui,sans-serif" font-size="8" fill="#0066CC" opacity="0.8" font-weight="700">A</text>
+    </g>
+  </g>
+</svg>
