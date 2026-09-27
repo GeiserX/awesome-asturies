@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
+  <defs>
+    <clipPath id="a-clip"><rect width="800" height="200" rx="16"/></clipPath>
+    <linearGradient id="a-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0f"/><stop offset="100%" stop-color="#14141f"/>
+    </linearGradient>
+    <linearGradient id="a-roof" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c9694a"/><stop offset="100%" stop-color="#9a4630"/>
+    </linearGradient>
+    <linearGradient id="a-wood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8a6140"/><stop offset="100%" stop-color="#5f412a"/>
+    </linearGradient>
+    <linearGradient id="a-stone" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#9c978b"/><stop offset="100%" stop-color="#6f6b62"/>
+    </linearGradient>
+    <linearGradient id="a-hill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2f5b3c"/><stop offset="100%" stop-color="#1b3325"/>
+    </linearGradient>
+    <clipPath id="a-roofclip"><path d="M566 96 L660 38 L754 96 Z"/></clipPath>
+    <pattern id="a-orbayu" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(16)">
+      <rect x="6" y="0" width="0.8" height="6" fill="#cfe0e8"/>
+    </pattern>
+    <filter id="a-blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="40"/></filter>
+  </defs>
+  <g clip-path="url(#a-clip)">
+    <rect width="800" height="200" fill="url(#a-bg)"/>
+    <ellipse cx="680" cy="190" rx="240" ry="110" fill="#2f6b45" opacity="0.22" filter="url(#a-blur)"/>
+    <ellipse cx="120" cy="10" rx="220" ry="100" fill="#c9694a" opacity="0.10" filter="url(#a-blur)"/>
+    <rect x="520" width="280" height="200" fill="url(#a-orbayu)" opacity="0.10"/>
+    <rect width="800" height="2" fill="#c9694a" opacity="0.7"/>
+
+    <!-- montes al fondo -->
+    <path d="M400 200 Q470 170 530 146 Q560 134 590 138 Q630 106 690 122 Q745 98 800 114 L800 200 Z" fill="#1c2a24" opacity="0.9"/>
+    <path d="M440 200 Q520 172 600 176 Q680 180 730 168 Q770 160 800 162 L800 200 Z" fill="url(#a-hill)"/>
+
+    <!-- hórreo asturiano -->
+    <g>
+      <!-- pegollos traseros -->
+      <path d="M634 182 L637 150 L647 150 L650 182 Z" fill="#5f5b53"/>
+      <path d="M670 182 L673 150 L683 150 L686 182 Z" fill="#5f5b53"/>
+      <rect x="632" y="145" width="18" height="6" rx="1" fill="#8f8a7e"/>
+      <rect x="666" y="145" width="18" height="6" rx="1" fill="#8f8a7e"/>
+      <!-- pegollos delanteros -->
+      <path d="M602 188 L606 150 L618 150 L622 188 Z" fill="url(#a-stone)"/>
+      <path d="M698 188 L702 150 L714 150 L718 188 Z" fill="url(#a-stone)"/>
+      <!-- muelas -->
+      <rect x="596" y="144" width="32" height="7" rx="1" fill="#b3ad9f"/>
+      <rect x="692" y="144" width="32" height="7" rx="1" fill="#b3ad9f"/>
+      <!-- trabes -->
+      <rect x="586" y="136" width="148" height="8" fill="#4a3220"/>
+      <!-- caxa de colondres -->
+      <rect x="590" y="96" width="140" height="40" fill="url(#a-wood)"/>
+      <g stroke="#3e2a1a" stroke-width="1" opacity="0.7">
+        <line x1="600" y1="96" x2="600" y2="136"/><line x1="610" y1="96" x2="610" y2="136"/>
+        <line x1="620" y1="96" x2="620" y2="136"/><line x1="630" y1="96" x2="630" y2="136"/>
+        <line x1="640" y1="96" x2="640" y2="136"/><line x1="680" y1="96" x2="680" y2="136"/>
+        <line x1="690" y1="96" x2="690" y2="136"/><line x1="700" y1="96" x2="700" y2="136"/>
+        <line x1="710" y1="96" x2="710" y2="136"/><line x1="720" y1="96" x2="720" y2="136"/>
+      </g>
+      <rect x="590" y="96" width="140" height="6" fill="#2a1c10" opacity="0.55"/>
+      <!-- puerta -->
+      <rect x="648" y="104" width="24" height="32" fill="#3a2717"/>
+      <rect x="650" y="106" width="20" height="30" fill="none" stroke="#9a7048" stroke-width="1"/>
+      <circle cx="666" cy="121" r="1.4" fill="#c9a36a"/>
+      <!-- tejado de teja a cuatro aguas -->
+      <path d="M566 96 L660 38 L754 96 Z" fill="url(#a-roof)"/>
+      <g clip-path="url(#a-roofclip)">
+        <g stroke="#7a3522" stroke-width="1.2" opacity="0.55">
+          <line x1="576" y1="30" x2="576" y2="100"/><line x1="588" y1="30" x2="588" y2="100"/>
+          <line x1="600" y1="30" x2="600" y2="100"/><line x1="612" y1="30" x2="612" y2="100"/>
+          <line x1="624" y1="30" x2="624" y2="100"/><line x1="636" y1="30" x2="636" y2="100"/>
+          <line x1="648" y1="30" x2="648" y2="100"/><line x1="660" y1="30" x2="660" y2="100"/>
+          <line x1="672" y1="30" x2="672" y2="100"/><line x1="684" y1="30" x2="684" y2="100"/>
+          <line x1="696" y1="30" x2="696" y2="100"/><line x1="708" y1="30" x2="708" y2="100"/>
+          <line x1="720" y1="30" x2="720" y2="100"/><line x1="732" y1="30" x2="732" y2="100"/>
+          <line x1="744" y1="30" x2="744" y2="100"/>
+        </g>
+        <g stroke="#e08a66" stroke-width="0.8" opacity="0.35">
+          <line x1="540" y1="60" x2="780" y2="60"/><line x1="540" y1="72" x2="780" y2="72"/>
+          <line x1="540" y1="84" x2="780" y2="84"/>
+        </g>
+      </g>
+      <path d="M566 96 L754 96" stroke="#e08a66" stroke-width="1.5" opacity="0.6"/>
+      <!-- pináculo -->
+      <path d="M657 40 L660 28 L663 40 Z" fill="#b3ad9f"/>
+      <circle cx="660" cy="27" r="2.4" fill="#b3ad9f"/>
+      <!-- subidoria -->
+      <path d="M736 188 L736 148 L746 148 L746 158 L756 158 L756 168 L766 168 L766 178 L776 178 L776 188 Z" fill="#7a766c"/>
+      <path d="M736 148 L746 148 L746 158 L756 158 L756 168 L766 168 L766 178 L776 178" fill="none" stroke="#a9a498" stroke-width="1" opacity="0.7"/>
+    </g>
+
+    <text x="48" y="88" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="42" fill="#ffffff" font-weight="700" letter-spacing="0.5">awesome-asturies</text>
+    <rect x="50" y="102" width="120" height="2" rx="1" fill="#c9694a" opacity="0.8"/>
+    <text x="49" y="128" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="rgba(255,255,255,0.6)" font-weight="400" letter-spacing="2.2">SOFTWARE OPEN SOURCE PAL PRINCIPAU D'ASTURIES</text>
+  </g>
+</svg>
