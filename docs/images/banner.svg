@@ -1,25 +1,90 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 200" width="900" height="200">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#27ae60"/>
-      <stop offset="100%" stop-color="#1a1a2e"/>
+    <clipPath id="c-clip"><rect width="800" height="200" rx="16"/></clipPath>
+    <linearGradient id="c-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0a0f"/><stop offset="100%" stop-color="#14141f"/>
     </linearGradient>
+    <linearGradient id="c-glass" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1f3a22"/><stop offset="45%" stop-color="#3f6b3a"/><stop offset="100%" stop-color="#16291a"/>
+    </linearGradient>
+    <linearGradient id="c-stream" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f3d27a"/><stop offset="100%" stop-color="#d99a2b"/>
+    </linearGradient>
+    <linearGradient id="c-cider" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f2c75c"/><stop offset="100%" stop-color="#c7801f"/>
+    </linearGradient>
+    <radialGradient id="c-red" cx="35%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#e8c24a"/><stop offset="45%" stop-color="#d0542f"/><stop offset="100%" stop-color="#7e2418"/>
+    </radialGradient>
+    <radialGradient id="c-yellow" cx="35%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#f4e27a"/><stop offset="60%" stop-color="#c9a63a"/><stop offset="100%" stop-color="#6f5a1c"/>
+    </radialGradient>
+    <filter id="c-blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="36"/></filter>
+    <filter id="c-glow"><feGaussianBlur stdDeviation="2"/></filter>
   </defs>
-  <rect width="900" height="200" rx="12" fill="url(#bg)"/>
-  <g stroke="#ffffff" stroke-opacity="0.04" stroke-width="1">
-    <line x1="0" y1="50" x2="900" y2="50"/>
-    <line x1="0" y1="100" x2="900" y2="100"/>
-    <line x1="0" y1="150" x2="900" y2="150"/>
-    <line x1="150" y1="0" x2="150" y2="200"/>
-    <line x1="300" y1="0" x2="300" y2="200"/>
-    <line x1="450" y1="0" x2="450" y2="200"/>
-    <line x1="600" y1="0" x2="600" y2="200"/>
-    <line x1="750" y1="0" x2="750" y2="200"/>
+  <g clip-path="url(#c-clip)">
+    <rect width="800" height="200" fill="url(#c-bg)"/>
+    <ellipse cx="110" cy="170" rx="170" ry="100" fill="#e0a23a" opacity="0.16" filter="url(#c-blur)"/>
+    <ellipse cx="720" cy="40" rx="190" ry="100" fill="#4f7a3a" opacity="0.14" filter="url(#c-blur)"/>
+    <rect width="800" height="2" fill="#e0a23a" opacity="0.7"/>
+
+    <!-- botella de sidra escanciando -->
+    <g transform="translate(112,44) rotate(118) scale(1.18)">
+      <path d="M-4 0 L4 0 L4.5 20 Q11 26 11 36 L11 98 Q11 102 7 102 L-7 102 Q-11 102 -11 98 L-11 36 Q-11 26 -4.5 20 Z" fill="url(#c-glass)"/>
+      <rect x="-4.5" y="-1" width="9" height="4" rx="1" fill="#2a4a2c"/>
+      <rect x="-11" y="54" width="22" height="24" fill="#e8dcc0" opacity="0.88"/>
+      <rect x="-11" y="57" width="22" height="1.4" fill="#5d4a2e" opacity="0.7"/>
+      <rect x="-11" y="74" width="22" height="1.4" fill="#5d4a2e" opacity="0.7"/>
+      <rect x="-6" y="63" width="12" height="1.6" rx="0.8" fill="#5d4a2e" opacity="0.6"/>
+      <rect x="-4" y="67" width="8" height="1.4" rx="0.7" fill="#5d4a2e" opacity="0.45"/>
+      <path d="M-7 34 L-7 96" stroke="#9fd09a" stroke-width="1.6" opacity="0.35"/>
+    </g>
+
+    <!-- chorro -->
+    <path d="M112 44 C 116 76, 118 112, 119 150" fill="none" stroke="#f3d27a" stroke-width="7" opacity="0.22" filter="url(#c-glow)"/>
+    <path d="M112 44 C 116 76, 118 112, 119 150" fill="none" stroke="url(#c-stream)" stroke-width="2.6" stroke-linecap="round"/>
+    <path d="M112.7 46 C 116 78, 117.6 112, 118.4 148" fill="none" stroke="#fff4cc" stroke-width="0.6" opacity="0.8"/>
+
+    <!-- vasu de sidra -->
+    <g transform="rotate(-10 112 168)">
+      <path d="M88 136 L134 136 L130 190 L92 190 Z" fill="#ffffff" opacity="0.06"/>
+      <path d="M91.3 172 L130.7 172 L130 190 L92 190 Z" fill="url(#c-cider)" opacity="0.92"/>
+      <path d="M91 169 Q111 164 131 169 L130.8 174 Q111 169 91.3 174 Z" fill="#fff1c8" opacity="0.9"/>
+      <path d="M88 136 L92 190 L130 190 L134 136" fill="none" stroke="#e6e3da" stroke-width="1.4" opacity="0.75"/>
+      <path d="M88 136 L134 136" stroke="#e6e3da" stroke-width="1" opacity="0.5"/>
+      <path d="M93 144 L96 184" stroke="#ffffff" stroke-width="1.8" opacity="0.22"/>
+      <rect x="91" y="189" width="40" height="3.5" rx="1" fill="#e6e3da" opacity="0.55"/>
+    </g>
+    <g fill="#f6dc8e">
+      <circle cx="113" cy="156" r="1.3" opacity="0.8"/><circle cx="126" cy="153" r="1" opacity="0.7"/>
+      <circle cx="108" cy="160" r="0.9" opacity="0.6"/><circle cx="129" cy="160" r="0.9" opacity="0.6"/>
+      <circle cx="117" cy="150" r="0.8" opacity="0.6"/>
+    </g>
+
+    <!-- ramu de pumarada -->
+    <g>
+      <path d="M810 -6 Q760 20 728 46 Q704 66 690 96" fill="none" stroke="#4a3322" stroke-width="4" stroke-linecap="round"/>
+      <path d="M752 26 Q742 50 746 74" fill="none" stroke="#4a3322" stroke-width="2.5" stroke-linecap="round"/>
+      <g fill="#4f7a3a">
+        <path d="M772 14 Q784 -4 800 6 Q786 20 772 14 Z"/>
+        <path d="M730 44 Q716 26 700 34 Q712 50 730 44 Z"/>
+        <path d="M712 66 Q720 50 736 54 Q728 70 712 66 Z" fill="#3d6530"/>
+        <path d="M748 60 Q764 54 772 66 Q758 72 748 60 Z"/>
+        <path d="M694 92 Q680 80 668 88 Q680 100 694 92 Z" fill="#3d6530"/>
+      </g>
+      <path d="M696 96 L698 102" stroke="#4a3322" stroke-width="1.6"/>
+      <circle cx="699" cy="116" r="15" fill="url(#c-red)"/>
+      <path d="M746 74 L747 80" stroke="#4a3322" stroke-width="1.4"/>
+      <circle cx="748" cy="92" r="13" fill="url(#c-yellow)"/>
+      <circle cx="722" cy="80" r="11" fill="url(#c-red)"/>
+      <path d="M721 64 L722 70" stroke="#4a3322" stroke-width="1.4"/>
+      <g fill="#ffffff" opacity="0.35">
+        <ellipse cx="693" cy="110" rx="3" ry="2"/><ellipse cx="743" cy="87" rx="2.6" ry="1.8"/><ellipse cx="718" cy="76" rx="2.2" ry="1.5"/>
+      </g>
+    </g>
+
+    <text x="400" y="78" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="38" fill="#ffffff" font-weight="700" letter-spacing="0.5">awesome-asturies</text>
+    <rect x="340" y="92" width="120" height="2" rx="1" fill="#e0a23a" opacity="0.8"/>
+    <text x="400" y="118" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="rgba(255,255,255,0.6)" font-weight="400" letter-spacing="2.4">SOFTWARE OPEN SOURCE PAL PRINCIPAU D'ASTURIES</text>
   </g>
-  <g transform="translate(60, 55)">
-    <circle cx="30" cy="30" r="28" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.3"/>
-    <text x="30" y="38" text-anchor="middle" font-family="monospace" font-size="24" fill="#ffffff" opacity="0.8">★</text>
-  </g>
-  <text x="130" y="95" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="44" font-weight="700" fill="#ffffff" letter-spacing="-1">Awesome Asturies</text>
-  <text x="132" y="130" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="15" fill="#ffffff" opacity="0.65" letter-spacing="0.3">Curated resources about Asturias, Spain</text>
 </svg>
