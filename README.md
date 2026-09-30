@@ -4,8 +4,10 @@
   <a href="https://awesome.re"><img src="https://awesome.re/badge-flat.svg" alt="Awesome"></a>
   <br><br>
   <p>Una selección de software open source que da soporte específico al Principado de Asturias, sus concejos, universidad e instituciones.</p>
+  <p>Búscalos en <a href="https://geiserx.github.io/awesome-asturies/">geiserx.github.io/awesome-asturies</a>.</p>
 </div>
 
+<!-- --8<-- [start:lista] -->
 ## Contenido
 
 <!--lint disable awesome-list-item-->
@@ -122,7 +124,7 @@ For the badge (grande):
 
 ## Contribuir
 
-Las contribuciones son bienvenidas. Lee las [directrices de contribución](contributing.md) antes de enviar un pull request.
+Las contribuciones son bienvenidas. Lee las [directrices de contribución](https://github.com/GeiserX/awesome-asturies/blob/main/contributing.md) antes de enviar un pull request.
 
 ## Nota
 
@@ -131,3 +133,4 @@ Esta lista se centra en software open source que da **soporte específico al Pri
 ## Descargo de responsabilidad
 
 No se aceptan proyectos relacionados con pornografía, contenido NSFW, loterías o apuestas, religión, política partidista ni cualquier otro tema controvertido. Esta lista pretende ser un recurso técnico neutral y útil para la comunidad de desarrolladores.
+<!-- --8<-- [end:lista] -->
