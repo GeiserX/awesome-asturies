@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="59 98 100 100" width="100" height="100" role="img" aria-label="Awesome Asturies">
+  <!-- The cider glass and the falling stream from docs/images/banner.svg (the
+       "chorro" and "vasu de sidra" groups, gradients c-stream and c-cider),
+       same coordinates and colours. The viewBox frames the lower part of the
+       stream, so it enters from the top edge. Dropped: the blurred stream glow
+       (c-glow), the 0.6 unit highlight on the stream, the bottle and the sky.
+       The glass outline goes from 1.4 to 3 units, the rim from 1 to 2.5, the
+       stream from 2.6 to 4, and the glass body from 0.06 to 0.14 opacity, so
+       the empty part of the glass still reads at 26 px. Ids carry an aw- prefix. -->
+  <defs>
+    <linearGradient id="aw-logo-stream" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f3d27a"/><stop offset="100%" stop-color="#d99a2b"/>
+    </linearGradient>
+    <linearGradient id="aw-logo-cider" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f2c75c"/><stop offset="100%" stop-color="#c7801f"/>
+    </linearGradient>
+  </defs>
+  <path d="M112 44 C 116 76, 118 112, 119 150" fill="none" stroke="url(#aw-logo-stream)" stroke-width="4" stroke-linecap="round"/>
+  <g transform="rotate(-10 112 168)">
+    <path d="M88 136 L134 136 L130 190 L92 190 Z" fill="#ffffff" opacity="0.14"/>
+    <path d="M91.3 172 L130.7 172 L130 190 L92 190 Z" fill="url(#aw-logo-cider)" opacity="0.92"/>
+    <path d="M91 169 Q111 164 131 169 L130.8 174 Q111 169 91.3 174 Z" fill="#fff1c8" opacity="0.9"/>
+    <path d="M88 136 L92 190 L130 190 L134 136" fill="none" stroke="#e6e3da" stroke-width="3" stroke-linejoin="round" opacity="0.75"/>
+    <path d="M88 136 L134 136" stroke="#e6e3da" stroke-width="2.5" opacity="0.5"/>
+    <path d="M93 144 L96 184" stroke="#ffffff" stroke-width="1.8" opacity="0.22"/>
+    <rect x="91" y="189" width="40" height="3.5" rx="1" fill="#e6e3da" opacity="0.55"/>
+  </g>
+  <g fill="#f6dc8e">
+    <circle cx="113" cy="156" r="1.3" opacity="0.8"/><circle cx="126" cy="153" r="1" opacity="0.7"/>
+    <circle cx="108" cy="160" r="0.9" opacity="0.6"/><circle cx="129" cy="160" r="0.9" opacity="0.6"/>
+    <circle cx="117" cy="150" r="0.8" opacity="0.6"/>
+  </g>
+</svg>
