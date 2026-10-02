@@ -1,0 +1,7 @@
+{
+  "database": "dolt",
+  "backend": "dolt",
+  "dolt_mode": "embedded",
+  "dolt_database": "asturies",
+  "project_id": "2e420d12-a977-469f-82aa-ace00750aef8"
+}
